@@ -1,12 +1,20 @@
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 import './App.css';
 import HomePage from "./pages/homepage/homepage.component";
+
+
 
 
 function App() {
   return (
     <div >
-        <HomePage/>
+        <Route exact path='/'  component={HomePage}/>
     </div>
   );
 }
